@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&loc=3 -->
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link media="screen" rel="stylesheet" type="text/css">
+<link href="./menu.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./label.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./progressbar.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./movingboxes.css" media="screen" rel="stylesheet" type="text/css"><script type="text/javascript" src="./modernizr.min.js"></script>
+<script type="text/javascript" src="./json3.min.js"></script>
+<script type="text/javascript" src="./jquery.min(1).js"></script>
+<script type="text/javascript" src="./jquery-ui.min.js"></script>
+<script type="text/javascript" src="./jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="./yui3-uhds.js"></script>
+<script type="text/javascript" src="./jquery.periodpicker.full.min.js"></script>
+<script type="text/javascript" src="./jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="./polyfiller.js"></script>
+<script type="text/javascript" src="./clipboard.js"></script>
+<script type="text/javascript" src="./jquery.movingboxes.min.js"></script>
+<link href="./css(2)" rel="stylesheet" type="text/css">
+
+</head><body><div id="saver" style="visibility:collapse; z-index:1;">
+    <img src="./BG.png" width="100%" height="100%">
+</div>
+
+<div id="live">
+  <div id="mobile-menu">
+    <span id="current_location">Arnold Bistro</span>
+    <input type="button" href="#sidr" value="Change Location"> 
+  </div>
+  <div class="kiosk_header" style="position:absolute">
+    <input type="button" href="#" onclick="reload()" style="display:none" value="Reset" class="reset">
+  </div>
+  <div id="sidr">
+    <h1 id="location_title">Select a Location</h1>
+        <div class="movingBoxes mb-wrapper" style="width: 1169.98px;"><a class="mb-scrollButtons mb-left disabled"></a><div class="mb-scroll" style="height: 93px;"><ul id="slider" class="mb-slider" style="position: absolute; width: 3569.99px; height: 103px; padding-left: 509.988px;">
+              <li class="mb-panel current" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="3" style="background-image: url(&quot;/api/public/images/bistro.gif&quot;); opacity: 1;" title="Southside Station"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="21" style="background-image:url(/api/public/images/bings.gif)" title="Bing`s"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="2" style="background-image:url(/api/public/images/eastsideeats.gif)" title="East Side Eat`s"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="7" style="background-image:url(/api/public/images/calabaloos.gif)" title="Calabaloo`s"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="24" style="background-image:url(/api/public/images/cascadia_market.gif)" title="Cascadia Market"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="23" style="background-image:url(/api/public/images/cascadia_cafe.gif)" title="Cascadia Cafe"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="13" style="background-image:url(/api/public/images/clubhouse.gif)" title="Clubhouse Deli"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="10" style="background-image:url(/api/public/images/coopers.gif)" title="Cooper`s Creek"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="16" style="background-image:url(/api/public/images/ebgb.gif)" title="EBGBs"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="9" style="background-image:url(/api/public/images/raintree.gif)" title="Raintree Coffee"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="11" style="background-image:url(/api/public/images/ringoffire.gif)" title="Ring of Fire"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="15" style="background-image:url(/api/public/images/serrano.gif)" title="Serrano Grill"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="8" style="background-image:url(/api/public/images/squeeze.gif)" title="Main Squeeze"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="14" style="background-image:url(/api/public/images/tomassitos.gif)" title="Tomassito`s"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="4" style="background-image:url(/api/public/images/fivefourone.gif)" title="Five-Four-One"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="5" style="background-image:url(/api/public/images/lacalle.gif)" title="La Calle"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="12" style="background-image:url(/api/public/images/westgrill.gif)" title="West Side Grill"></div></li>
+              <li class="mb-panel" style="width: 150px; font-size: 1em; height: auto;"><div class="mb-inside"><input type="button" data-active="false" class="locations" id="18" style="background-image:url(/api/public/images/offthequad.gif)" title="Off The Quad"></div></li>
+          </ul></div><a class="mb-scrollButtons mb-right"></a><div class="mb-left-shadow"></div><div class="mb-right-shadow"></div><div class="mb-controls"><span class="mb-links"><a class="mb-link mb-panel1 current" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Southside Station</a><a class="mb-link mb-panel2" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Bing`s</a><a class="mb-link mb-panel3" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">East Side Eat`s</a><a class="mb-link mb-panel4" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Calabaloo`s</a><a class="mb-link mb-panel5" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Cascadia Market</a><a class="mb-link mb-panel6" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Cascadia Cafe</a><a class="mb-link mb-panel7" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Clubhouse Deli</a><a class="mb-link mb-panel8" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Cooper`s Creek</a><a class="mb-link mb-panel9" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">EBGBs</a><a class="mb-link mb-panel10" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Raintree Coffee</a><a class="mb-link mb-panel11" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Ring of Fire</a><a class="mb-link mb-panel12" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Serrano Grill</a><a class="mb-link mb-panel13" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Main Squeeze</a><a class="mb-link mb-panel14" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Tomassito`s</a><a class="mb-link mb-panel15" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Five-Four-One</a><a class="mb-link mb-panel16" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">La Calle</a><a class="mb-link mb-panel17" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">West Side Grill</a><a class="mb-link mb-panel18" href="https://app.uhds.oregonstate.edu/api/dining/menu/index?format=pc&amp;loc=3#">Off The Quad</a></span></div></div>
+      </div>
+  <div id="main_content">
+    <div id="menu"><h3 id="category" class="full">Todays Menu</h3>
+<div class="scroll" style="overflow:auto; height:830px">
+    <h3 id="category">Deli Sandwiches- Choose Cheese</h3>
+                    <div id="item" class="unactive-item" data-itemid="123">
+          <p>Provolone Cheese</p>
+          <em>Calories:200</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="3176">
+          <p>Pepper Jack Cheese</p>
+          <em>Calories:110</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="3944">
+          <p>Swiss Cheese</p>
+          <em>Calories:220</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="9778">
+          <p>Cheddar Cheese</p>
+          <em>Calories:110</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="25285">
+          <p>Non-Dairy Provolone Cheese (contains coconut)</p>
+          <em>Calories:60</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./treenuts.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="25286">
+          <p>Non-dairy American Cheese (contains coconut)</p>
+          <em>Calories:60</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./treenuts.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Deli Sandwiches- Choose Protein</h3>
+                    <div id="item" class="unactive-item" data-itemid="132">
+          <p>Turkey</p>
+          <em>Calories:110</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="3941">
+          <p>Bacon</p>
+          <em>Calories:200</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./pork.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="11745">
+          <p>Pastrami</p>
+          <em>Calories:250</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32185">
+          <p>Ham</p>
+          <em>Calories:45</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./pork.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32186">
+          <p>Egg Salad</p>
+          <em>Calories:250</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Deli Sandwiches- Choose Spread</h3>
+                    <div id="item" class="unactive-item" data-itemid="648">
+          <p>Yellow Mustard</p>
+          <em>Calories:0</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="3949">
+          <p>Pesto Mayonnaise</p>
+          <em>Calories:190</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="24400">
+          <p>Guacamole</p>
+          <em>Calories:60</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="28946">
+          <p>Mayonnaise</p>
+          <em>Calories:210</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32187">
+          <p>Hummus</p>
+          <em>Calories:80</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32273">
+          <p>Chipotle Mayonnaise</p>
+          <em>Calories:220</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Deli Sandwiches- Choose Veggies</h3>
+                    <div id="item" class="unactive-item" data-itemid="651">
+          <p>Tomato</p>
+          <em>Calories:10</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="654">
+          <p>Pickle Spear</p>
+          <em>Calories:5</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="656">
+          <p>Cucumber</p>
+          <em>Calories:0</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="659">
+          <p>Pepperoncini</p>
+          <em>Calories:5</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="17322">
+          <p>Red Onion</p>
+          <em>Calories:5</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="19547">
+          <p>Spinach</p>
+          <em>Calories:5</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="28945">
+          <p>Leaf Lettuce</p>
+          <em>Calories:0</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="29000">
+          <p>Pickle Chips</p>
+          <em>Calories:5</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="31528">
+          <p>Tri Color Bell Peppers</p>
+          <em>Calories:5</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                <h3 id="category">The Grill ~ Build A Burger- Choose a Patty</h3>
+                    <div id="item" class="unactive-item" data-itemid="2572">
+          <p>Chicken Strip (1)</p>
+          <em>Calories:100</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30967">
+          <p>5 oz Grilled Chicken Breast</p>
+          <em>Calories:130</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32155">
+          <p>1/3 lb Beef Patty</p>
+          <em>Calories:410</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                <h3 id="category">The Grill ~ Build A Burger- Choose Toppings &amp; Sauces</h3>
+                    <div id="item" class="unactive-item" data-itemid="3176">
+          <p>Pepper Jack Cheese</p>
+          <em>Calories:110</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="3455">
+          <p>Teriyaki Glaze</p>
+          <em>Calories:140</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="3944">
+          <p>Swiss Cheese</p>
+          <em>Calories:220</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="3950">
+          <p>Dill Pickle</p>
+          <em>Calories:20</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="5363">
+          <p>Ranch</p>
+          <em>Calories:210</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="9778">
+          <p>Cheddar Cheese</p>
+          <em>Calories:110</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="10008">
+          <p>Bacon</p>
+          <em>Calories:140</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./pork.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="10596">
+          <p>Tomato</p>
+          <em>Calories:10</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="12499">
+          <p>Pickled Jalapeno</p>
+          <em>Calories:0</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="24400">
+          <p>Guacamole</p>
+          <em>Calories:60</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="25285">
+          <p>Non-Dairy Provolone Cheese (contains coconut)</p>
+          <em>Calories:60</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./treenuts.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="25286">
+          <p>Non-dairy American Cheese (contains coconut)</p>
+          <em>Calories:60</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./treenuts.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="27417">
+          <p>Sweet and Spicy Mustard</p>
+          <em>Calories:210</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="28945">
+          <p>Leaf Lettuce</p>
+          <em>Calories:0</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="28992">
+          <p>Grilled Mushrooms</p>
+          <em>Calories:25</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30504">
+          <p>Fry Sauce</p>
+          <em>Calories:160</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30509">
+          <p>Caramelized Onions</p>
+          <em>Calories:20</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="31167">
+          <p>Ketchup</p>
+          <em>Calories:10</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="31168">
+          <p>Mayonnaise</p>
+          <em>Calories:90</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="31169">
+          <p>BBQ Sauce</p>
+          <em>Calories:45</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="31170">
+          <p>Yellow Mustard</p>
+          <em>Calories:10</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32173">
+          <p>Sliced Red Onion</p>
+          <em>Calories:10</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                <h3 id="category">The Grill ~ Build A Burger- Choose a Bun</h3>
+                    <div id="item" class="unactive-item" data-itemid="3458">
+          <p>Whole Grain Bun</p>
+          <em>Calories:180</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="27415">
+          <p>Potato Bun</p>
+          <em>Calories:240</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30277">
+          <p>Gluten Free Bun</p>
+          <em>Calories:270</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                <h3 id="category">Nori Grill ~ Build Your Own Ramen Bowl- Protein Selections</h3>
+                    <div id="item" class="unactive-item" data-itemid="3938">
+          <p>Tofu</p>
+          <em>Calories:80</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="26906">
+          <p>Cured Pork Belly</p>
+          <em>Calories:420</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./pork.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="26910">
+          <p>Grilled Chicken Breast</p>
+          <em>Calories:90</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                <h3 id="category">Global ~ Breakfast</h3>
+                    <div id="item" class="unactive-item" data-itemid="6018">
+          <p>Bacon</p>
+          <em>Calories:140</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./pork.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="6665">
+          <p>Hash Brown Triangles</p>
+          <em>Calories:250</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="9394">
+          <p>Biscuits &amp; Gravy (Full Order)</p>
+          <em>Calories:470</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./pork.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="9506">
+          <p>French Toast</p>
+          <em>Calories:80</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="9576">
+          <p>Pork Sausage Links</p>
+          <em>Calories:200</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./pork.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="29047">
+          <p>Biscuits</p>
+          <em>Calories:340</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30168">
+          <p>Pancakes</p>
+          <em>Calories:120</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="31612">
+          <p>Breakfast Potatoes</p>
+          <em>Calories:140</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                <h3 id="category">The Grill ~ Sides</h3>
+                    <div id="item" class="unactive-item" data-itemid="7840">
+          <p>French Fries</p>
+          <em>Calories:260</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32497">
+          <p>Chicken tenders</p>
+          <em>Calories:510</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Global ~ Breakfast Burritos</h3>
+                    <div id="item" class="unactive-item" data-itemid="8758">
+          <p>Breakfast Burrito w/Bacon</p>
+          <em>Calories:510</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30286">
+          <p>Soyrizo Breakfast Burrito</p>
+          <em>Calories:530</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Nori Grill ~ Build Your Own Ramen Bowl- Topping Selections</h3>
+                    <div id="item" class="unactive-item" data-itemid="10114">
+          <p>Hard Boiled Egg</p>
+          <em>Calories:70</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="18161">
+          <p>Bamboo Shoots</p>
+          <em>Calories:5</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="26898">
+          <p>Corn</p>
+          <em>Calories:25</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="26911">
+          <p>Fried Garlic</p>
+          <em>Calories:220</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="26912">
+          <p>Roasted Garlic &amp; Nori Puree</p>
+          <em>Calories:110</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="27425">
+          <p>Sliced Green Onions</p>
+          <em>Calories:5</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32176">
+          <p>Bean Sprouts</p>
+          <em>Calories:10</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="active-item" data-itemid="32177">
+          <p>Dried Shitake Mushroom</p>
+          <em>Calories:80</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        <input id="menubutton" onclick="add_item(this)" value="Add Item" type="button"></div>
+                            <div id="item" class="unactive-item" data-itemid="32179">
+          <p>Poached Egg</p>
+          <em>Calories:80</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./alcohol.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32180">
+          <p>Nori Strips</p>
+          <em>Calories:0</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32181">
+          <p>Wakame</p>
+          <em>Calories:15</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                <h3 id="category">Bakery (subject to availability)</h3>
+                    <div id="item" class="unactive-item" data-itemid="18978">
+          <p>Banana Bread</p>
+          <em>Calories:230</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="27209">
+          <p>Pain Au Chocolat</p>
+          <em>Calories:900</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="28204">
+          <p>Butter Croissant</p>
+          <em>Calories:350</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30164">
+          <p>Brownie</p>
+          <em>Calories:370</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30542">
+          <p>Orange Cream Danish</p>
+          <em>Calories:570</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32037">
+          <p>Chocolate Chunk Cookie</p>
+          <em>Calories:320</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32547">
+          <p>Almond Poppyseed Muffin</p>
+          <em>Calories:160</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./treenuts.png" height="30" width="30">
+                                                    <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                                                            <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32726">
+          <p>Ham &amp; Swiss Croissant</p>
+          <em>Calories:610</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./pork.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Global ~ Breakfast Sandwiches</h3>
+                    <div id="item" class="unactive-item" data-itemid="19601">
+          <p>Turkey Breakfast Bagel Sandwich</p>
+          <em>Calories:380</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30289">
+          <p>Breakfast Veggie Sausage Bagel</p>
+          <em>Calories:310</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32518">
+          <p>Egg, Ham, and Cheese Sandwich</p>
+          <em>Calories:330</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./pork.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Soups</h3>
+                    <div id="item" class="unactive-item" data-itemid="22052">
+          <p>Tomato Basil Soup</p>
+          <em>Calories:80</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./alcohol.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="31989">
+          <p>Chicken Noodle Soup</p>
+          <em>Calories:170</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Nori Grill ~ Build Your Own Ramen Bowl- Broth Selections</h3>
+                    <div id="item" class="unactive-item" data-itemid="23931">
+          <p>Tonkotsu Ramen Broth</p>
+          <em>Calories:0</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./pork.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="25717">
+          <p>Miso Soup</p>
+          <em>Calories:60</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="26896">
+          <p>Shoyu Ramen Broth</p>
+          <em>Calories:40</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Nori Grill ~ Bowls</h3>
+                    <div id="item" class="unactive-item" data-itemid="25233">
+          <p>Chicken Teriyaki Bowl</p>
+          <em>Calories:550</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="26880">
+          <p>Spicy Korean Pork w/ Egg Bowl</p>
+          <em>Calories:650</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./pork.png" height="30" width="30">
+                                                    <img src="./fish.png" height="30" width="30">
+                                                    <img src="./shellfish.png" height="30" width="30">
+                                                    <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="26907">
+          <p>Fried Tofu Teriyaki Bowl</p>
+          <em>Calories:700</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./soy.png" height="30" width="30">
+                                                    <img src="./alcohol.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="29640">
+          <p>Beef Teriyaki Bowl</p>
+          <em>Calories:480</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./alcohol.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Nori Grill ~ Build Your Own Ramen Bowl- Noodle Selections</h3>
+                    <div id="item" class="unactive-item" data-itemid="25516">
+          <p>Rice Noodles</p>
+          <em>Calories:190</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="29632">
+          <p>Udon Noodles</p>
+          <em>Calories:580</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32175">
+          <p>Ramen Noodle</p>
+          <em>Calories:300</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Nori Grill ~ Sides</h3>
+                    <div id="item" class="unactive-item" data-itemid="25717">
+          <p>Miso Soup</p>
+          <em>Calories:60</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32174">
+          <p>Togarashi Tots</p>
+          <em>Calories:1290</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                <h3 id="category">Deli Sandwiches- Choose Bread</h3>
+                    <div id="item" class="unactive-item" data-itemid="26622">
+          <p>Naan Bread</p>
+          <em>Calories:280</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                                            <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32182">
+          <p>White Hoagie</p>
+          <em>Calories:170</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32183">
+          <p>Gluten Free Bread</p>
+          <em>Calories:130</em>
+          <div style="float:right;margin-top: 2px;">
+                                            </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32184">
+          <p>Croissant</p>
+          <em>Calories:300</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./egg.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="32268">
+          <p>Wheat Hoagie</p>
+          <em>Calories:140</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Global ~ Breakfast Bowls</h3>
+                    <div id="item" class="unactive-item" data-itemid="30284">
+          <p>Sausage Breakfast Bowl</p>
+          <em>Calories:690</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./pork.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30285">
+          <p>Veggie Breakfast Bowl</p>
+          <em>Calories:300</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Deli ~ Grab N` Go Sandwiches</h3>
+                    <div id="item" class="unactive-item" data-itemid="30303">
+          <p>Ham &amp; Cheddar Sandwich</p>
+          <em>Calories:400</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./pork.png" height="30" width="30">
+                                                    <img src="./milk.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30305">
+          <p>Roast Beef Sandwich</p>
+          <em>Calories:410</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30306">
+          <p>Turkey &amp; Swiss Sandwich</p>
+          <em>Calories:600</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                                    <img src="./egg.png" height="30" width="30">
+                                                    <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30311">
+          <p>Portabella Mushroom Sandwich (contains coconut)</p>
+          <em>Calories:410</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./gluten.png" height="30" width="30">
+                                                    <img src="./wheat.png" height="30" width="30">
+                                                    <img src="./treenuts.png" height="30" width="30">
+                                                    <img src="./soy.png" height="30" width="30">
+                                  </div>
+        </div>
+                <h3 id="category">Yogurt Parfait &amp; Acai</h3>
+                    <div id="item" class="unactive-item" data-itemid="30787">
+          <p>Yogurt Parfait w/ Blueberries</p>
+          <em>Calories:350</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="30844">
+          <p>Acai &amp; Fruit Bowl w/ Coconut</p>
+          <em>Calories:390</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./treenuts.png" height="30" width="30">
+                                  </div>
+        </div>
+                            <div id="item" class="unactive-item" data-itemid="31255">
+          <p>Yogurt Parfait w/Strawberries</p>
+          <em>Calories:270</em>
+          <div style="float:right;margin-top: 2px;">
+                                      <img src="./milk.png" height="30" width="30">
+                                  </div>
+        </div>
+            </div></div>
+    <div id="side_bar">
+      <div id="middle_col" style="float:left;">
+      <h3 id="category" class="full">My Meal</h3>
+        <div id="mymeal"></div>
+        <div id="label">
+<div id="nutrition">
+<table class="NutritionHeader">
+  <tbody><tr><td>Nutrition Facts</td></tr>
+  <tr class="subHead">
+    <td>
+      Serving Size 1 Ounce      (about 28g)
+    </td>
+  </tr>
+  <tr><td class="Amount">Amount Per Serving</td></tr>
+</tbody></table>
+<table class="NutritionDetail">
+  <tbody><tr>
+    <td class="left">Calories <span id="Calories">80</span></td>
+    <td class="right">Calories from Fat 0</td>
+  </tr>
+  <tr>
+    <td class="thickline">-</td>
+    <td class="thickline">% Daily Value*</td>
+  </tr>
+  <tr>
+    <td class="left">Total Fat <span id="Fat">0</span>g</td>
+    <td class="right">0%</td></tr>
+  <tr>
+    <td class="subleft">Saturated Fat <span id="SatFat">0</span>g</td>
+    <td class="right">0%</td>
+  </tr>
+  <tr>
+    <td class="subleft">Trans Fat <span id="TranFat">0</span>g</td>
+    <td class="right">-</td>
+  </tr>
+  <tr>
+    <td class="left">Cholesterol <span id="Cholest">0</span>mg</td>
+    <td class="right">0%</td>
+  </tr>
+  <tr>
+    <td class="left">Sodium <span id="Sodium">0</span>mg</td>
+    <td class="right">0%</td>
+  </tr>
+  <tr>
+    <td class="left">Total Carbohydrate <span id="Carb">21</span>g</td>
+    <td class="right">7%</td>
+  </tr>
+  <tr>
+    <td class="subleft">Dietary Fiber <span id="Fiber">3</span>g</td>
+    <td class="right">13%</td>
+  </tr>
+  <tr>
+    <td class="subleft">Sugars <span id="Sugar">6</span>g</td>
+    <td class="right">-</td>
+  </tr>
+  <tr>
+    <td class="left">Protein <span id="Protein">3</span>g</td>
+    <td class="right">5%</td>
+  </tr>
+  <tr>
+    <td id="VitA" class="leftbar">Vitamin A 0%</td>
+    <td id="VitC" class="rightbar">Vitamin C 2%</td>
+  </tr>
+  <tr>
+    <td id="Calcium" class="leftvit">Calcium 0%</td>
+    <td id="Iron" class="right">Iron 2%</td>
+  </tr>
+</tbody></table>
+<table class="Disclaimer">
+  <tbody><tr>
+    <td class="claim">
+    *Percent Daily Values are based on a 2000 calorie diet. Nutritional
+    information is calculated based on UHDS standardized recipes. Data
+    is calculated using computer software, and rounded to meet FDA
+    regulations.Because items are handcrafted and may be customized, actual
+    nutritional values may vary.
+    </td>
+  </tr>
+</tbody></table>
+<p id="productIng">Shitake Mushroom<br><br><b> Contains: </b> </p>
+</div></div>
+      </div>
+      <div id="allergen_nav">
+      <h3 id="category" class="full">My Nutrition</h3>
+        <div id="statbar">
+          <table id="totals" class="info">
+            <tbody><tr>
+              <td>Calories:<span id="Cal">0</span>/2000
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="CalP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+            <tr>
+              <td>Total Fat(g):<span id="Tfat">0</span>/65
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="TfatP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+            <tr>
+              <td>Saturated Fat(g):<span id="Sfat">0</span>/20
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="SfatP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+            <tr>
+              <td>Carbohydrates(g):<span id="Carbs">0</span>/300
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="CarbsP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+            <tr>
+              <td>Sodium(mg):<span id="Sod">0</span>/2400
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="SodP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+            <tr>
+              <td>Sugars(g):<span id="Sug">0</span>
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="SugP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+            <tr>
+              <td>Protein(g):<span id="Pro">0</span>/50
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="ProP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+            <tr>
+              <td>Cholesterol(mg):<span id="Chol">0</span>/300
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="CholP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+            <tr>
+              <td>Fiber(g):<span id="Fib">0</span>/25
+                <section class="work">
+                  <div class="ui-progress-bar ui-container" style="width: 155px; height:16px;">
+                    <div id="FibP" class="ui-progress" style="width: 0%; height:14px;"></div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+        <h3 id="category" class="full" style="margin-top:10px; margin-bottom: 5px;">Allergen Filter</h3>
+                    <input type="button" data-active="false" class="allergen" id="1" style="background-image:url(/api/public/images/milk.png?1)" title="Milk">                    <input type="button" data-active="false" class="allergen" id="2" style="background-image:url(/api/public/images/egg.png?1)" title="Egg">                    <input type="button" data-active="false" class="allergen" id="3" style="background-image:url(/api/public/images/fish.png?1)" title="Fish">                    <input type="button" data-active="false" class="allergen" id="4" style="background-image:url(/api/public/images/shellfish.png?1)" title="Shellfish">                    <input type="button" data-active="false" class="allergen" id="5" style="background-image:url(/api/public/images/treenuts.png?1)" title="Treenuts">                    <input type="button" data-active="false" class="allergen" id="6" style="background-image:url(/api/public/images/wheat.png?1)" title="Wheat">                    <input type="button" data-active="false" class="allergen" id="7" style="background-image:url(/api/public/images/peanut.png?1)" title="Peanut">                    <input type="button" data-active="false" class="allergen" id="8" style="background-image:url(/api/public/images/soy.png?1)" title="Soy">                    <input type="button" data-active="false" class="allergen" id="9" style="background-image:url(/api/public/images/gluten.png?1)" title="Gluten">                    <input type="button" data-active="false" class="allergen" id="10" style="background-image:url(/api/public/images/alcohol.png?1)" title="Alcohol">                    <input type="button" data-active="false" class="allergen" id="11" style="background-image:url(/api/public/images/pork.png?1)" title="Pork">                <h3 id="category" class="full" style="margin-top:10px; margin-bottom: 5px;">Diet Preference<span class="voption"></span></h3>
+        <input type="button" data-active="true" id="veg" class="allergen" style="background-image:url(/api/public/images/veg.png?1)">
+        <input type="button" data-active="true" id="vgn" class="allergen" style="background-image:url(/api/public/images/vegan.png?1)">
+        <input type="button" data-active="true" id="hal" class="allergen" style="background-image:url(/api/public/images/halal.png?1)">
+        <input type="button" data-active="true" id="bb" class="allergen" style="background-image:url(/api/public/images/betterbites.png?1)">
+        <input type="button" data-active="true" id="mc" class="allergen" style="background-image:url(/api/public/images/makecents.png?1)">
+      </div>
+    </div>
+  </div>
+  <div id="nutrition_popup" title="test"></div>
+</div>
+<script>
+var timer;
+var active_allergens = new Array('0');
+var active_options = {'veg': 'true', 'vgn': 'true', 'hal': 'true', 'bb': 'true', 'mc': 'true'};
+var active_location = 3;
+var platform = 'pc';
+var startPanel = $('#3').parent('li').index() + 1;
+$('#3').css('opacity', '1');
+get_menu_items(active_location);
+
+//Track app use on kiosks
+
+if(platform === 'pc') {
+
+    $(window).scroll(function() {
+      if($(window).scrollTop() > $('#main_content').offset().top) {
+        $('#side_bar').css('margin-top',
+          $(window).scrollTop() - $('#main_content').offset().top);
+      } else {
+        $('#side_bar').css('margin-top', 0);
+      }
+    });
+
+    $(function(){
+      $('#slider').movingBoxes({
+        startPanel   : startPanel,
+        reducedSize  : 1.0,
+        buildNav     : true,
+        navFormatter : function(index, panel){
+          return panel.find('input').attr('title');
+        }
+      });
+      $('.mb-links a').each(function() {
+        $(this).click(function() {
+          $('#slider input').css('opacity', '.5');
+          title = 'input[title="' +$(this).text() + '"]';
+          active_location = $("#slider").find(title).attr('id');
+          $("#slider").find(title).css('opacity', 1);
+          $("#slider").find(title).focus();
+          get_menu_items(active_location);
+        });
+      });
+    });
+}
+
+function reload() {
+    location.reload();
+}
+
+if(platform === 'tablet' || platform === 'mobile') {
+    $('#mobile-menu').sidr({
+        name: 'sidr',
+        source: 
+            function() {
+                return $('#sidr').html();
+            }
+    });
+}
+
+if(platform === 'tablet') {
+    $('.sidr').css('margin-top', '65px');
+    $('.sidr').css('height', '95%');
+    $('.reset').css('display', 'block');
+    $.sidr('open', 'sidr');
+    $('#saver').css('visibility', 'visible');
+    $('.sidr').css('visibility', 'collapse');
+    $(window).on(
+      { 'touchstart' : function() {
+        $('#saver').css('visibility', 'collapse'); 
+        $('.sidr').css('visibility', 'visible');
+      }
+    });
+}
+
+$('#slider input').each(function() {
+  $(this).click(function() {
+    active_location = $(this).attr('id');
+    offset = $(this).offset();
+    slider_offset = $('#sidr').scrollTop();
+    diff = 384 - slider_offset;
+    if (offset.top > diff) {
+        $('#sidr').scrollTop(offset.top - diff);
+    } else {
+        $('#sidr').scrollTop(0);
+    }
+    $(this).focus();
+    $('#slider input').css('opacity', '.5');
+    $(this).css('opacity', '1');
+    get_menu_items(active_location);
+    if(platform === 'mobile') {
+        $.sidr('close', 'sidr');
+        title = $(this).attr('title');
+        $('#current_location').html(title);
+    }
+  });
+});
+
+$('#allergen_nav input').each(function() {
+  $(this).click(function() {
+    id = $(this).attr('id');
+
+    if (id === 'veg' || id === 'vgn' || id === 'hal' || id === 'mc' || id === 'bb') {
+        toggle_options($(this));
+    } else {
+      if($(this).attr('data-active') === 'true') {
+        $(this).attr('data-active', 'false');
+        url = $(this).css('background-image').replace('X.png', '.png');
+        active_allergens[id] = null;
+      } else {
+        $(this).attr('data-active', 'true');
+        url = $(this).css('background-image').replace('.png', 'X.png');
+        active_allergens[id] = id;
+      }
+      $(this).css('background-image', url);
+    }
+
+    get_menu_items(active_location);
+  });
+});
+
+function addOption(option) {
+  if ($(option).attr('data-active') === 'true') {
+    url = $(option).css('background-image').replace('.png', 'X.png');
+    $(option).css('background-image', url);
+    $(option).attr('data-active', 'false');
+  }
+}
+
+function removeOption(option) {
+  if ($(option).attr('data-active') === 'false') {
+  url = $(option).css('background-image').replace('X.png', '.png');
+  $(option).css('background-image', url);
+  $(option).attr('data-active', 'true');
+  }
+}
+
+function toggle_options(element) {
+  flag = element.attr('data-active');
+  id = '#' + element.attr('id');
+    if (id === '#vgn') {
+        if (flag === 'false') {
+            removeOption('#vgn');
+            active_options['vgn'] = 'true';
+        } else {
+            addOption('#vgn');
+            removeOption('#veg');
+            active_options['veg'] = 'true';
+            active_options['vgn'] = 'false';
+        }
+    } else if (id === '#veg') {
+        if (flag === 'false') {
+            removeOption('#veg');
+            active_options['veg'] = 'true';
+        } else {
+            addOption('#veg');
+            removeOption('#vgn');
+            active_options['vgn'] = 'true';
+            active_options['veg'] = 'false';
+        }
+    } else if (flag === 'false') {
+        removeOption(id);
+        active_options[element.attr('id')] = 'true';
+    } else {
+        addOption(id);
+        active_options[element.attr('id')] = 'false';
+    }
+}
+
+function get_menu_items(location) {
+  $.ajax({
+    type:'GET',
+    url:'/api/dining/menu/menu',
+    data: {
+        'location' : location,
+        'allergen' : active_allergens,
+        'options'  : active_options
+    },
+    success:function(menu_items) {
+      $('#menu').html(menu_items);
+      $('#menu .scroll div').each(function() {
+        $(this).click(function() {
+          $('.active-item').attr('class', 'unactive-item');
+          $(this).attr('class', 'active-item');
+          $('#menubutton').remove();
+          $(this).append('<input id="menubutton" onclick="add_item(this)" value="Add Item" type="button">');
+          if ($(this).attr('data-itemid') != undefined) {
+            get_item_detail($(this).attr('data-itemid'));
+          }
+          name = $(this).children('p').html();
+          if(platform === 'mobile') {
+            $(function() {
+              $( "#label" ).dialog({
+                'title': name
+              });
+            });
+          }
+        });
+      });
+    }
+  });
+}
+
+function add_item(object) {
+    var itemNumber = $(object).closest('div').attr('data-itemid');
+    var itemName = $(object).siblings('p').html();
+    adjust_totals('add');
+    $('#mymeal').append('<div id="myitem" class="unactive-item" data-itemid="'+ itemNumber +'"><p>' + itemName + '</p></div>');
+    $('#mymeal div').click(function() {
+        $('.active-item').attr('class', 'unactive-item');
+        $(this).attr('class', 'active-item');
+        $('#menubutton').remove();
+        $(this).append('<input id="menubutton" onclick="remove_item(this)" value="Remove Item" type="button">');
+        get_item_detail($(this).attr('data-itemid'));
+    });
+}
+
+function adjust_totals(modifier) {
+    if (modifier === 'add') {
+        modifier = 1;
+    } else {
+        modifier = -1;
+    }
+    total = parseInt($('#Cal').text()) + ($('#Calories').text() * modifier);
+    set_stat_bar(2000, total, '#CalP');
+
+    total = parseFloat($('#Tfat').text()) + ($('#Fat').text() * modifier);
+    set_stat_bar(65, total, '#TfatP');
+
+    total = parseFloat($('#Sfat').text()) + ($('#SatFat').text() * modifier);
+    set_stat_bar(20, total, '#SfatP');
+
+    total = parseInt($('#Carbs').text()) + ($('#Carb').text() * modifier);
+    set_stat_bar(300, total, '#CarbsP');
+
+    total = parseInt($('#Sod').text()) + ($('#Sodium').text() * modifier);
+    set_stat_bar(2400, total, '#SodP');
+
+    total = parseInt($('#Sug').text()) + ($('#Sugar').text() * modifier);
+    set_stat_bar(1, total, '#SugP');
+
+    total = parseInt($('#Pro').text()) + ($('#Protein').text() * modifier);
+    set_stat_bar(50, total, '#ProP');
+
+    total = parseInt($('#Chol').text()) + ($('#Cholest').text() * modifier);
+    set_stat_bar(300, total, '#CholP');
+
+    total = parseInt($('#Fib').text()) + ($('#Fiber').text() * modifier);
+    set_stat_bar(25, total, '#FibP');
+}
+
+function set_stat_bar(max, total, object_id) {
+    percent = (total / max) * 100;
+    if (percent > 100) {
+        percent = 100;
+        if (object_id === '#SugP') {
+            $(object_id).css('background', '#FFFF66');
+        } else {
+            $(object_id).css('background', '#E60000');
+        }
+    } else {
+        $(object_id).css('background', '#74d04c');
+    }
+    $(object_id).css('width', percent + '%');
+    object_id = object_id.slice(0, -1);
+    $(object_id).html(total);
+}
+
+function remove_item(object) {
+    adjust_totals('remove');
+    $(object).closest('div').remove();
+}
+
+function get_item_detail(item) {
+  $.ajax({
+    type:"GET",
+    url:"/api/dining/menu/nutrition?item="+item,
+    success:function(label){
+      $('#label').html(label);
+    }
+  });
+}
+
+
+</script>
+</body></html>
